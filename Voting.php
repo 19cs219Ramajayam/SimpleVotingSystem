@@ -1,0 +1,93 @@
+<?php
+include("connection.php");
+$A=0;$B=0;$C=0;$D=0;$E=0;$F=0;$G=0;$H=0;$I=0;$J=0;$K=0;$L=0;$M=0;$N=0;$O=0;$P=0;$Q=0;$R=0;$S=0;$T=0;
+if(isset($_POST["A"]))
+{
+    $A=$A+(1);
+}
+if(isset($_POST["B"]))
+{
+    $B=$B+(1);
+}
+if(isset($_POST["C"]))
+{
+    $C=$C+(1);
+}
+if(isset($_POST["D"]))
+{
+    $D=$D+(1);
+}
+if(isset($_POST["E"]))
+{
+    $E=$E+(1);
+}
+if(isset($_POST["F"]))
+{
+    $F=$F+(1);
+}
+if(isset($_POST["G"]))
+{
+    $G=$G+(1);
+}
+if(isset($_POST["H"]))
+{
+    $H=$H+(1);
+}
+if(isset($_POST["I"]))
+{
+    $I=$I+(1);
+}
+if(isset($_POST["J"]))
+{
+    $J=$J+(1);
+}
+if(isset($_POST["K"]))
+{
+    $K=$K+(1);
+}
+if(isset($_POST["L"]))
+{
+    $L=$L+(1);
+}
+if(isset($_POST["M"]))
+{
+    $M=$M+(1);
+}
+if(isset($_POST["N"]))
+{
+    $N=$N+(1);
+}
+if(isset($_POST["O"]))
+{
+    $O=$O+(1);
+}
+if(isset($_POST["P"]))
+{
+    $P=$P+(1);
+}
+if(isset($_POST["Q"]))
+{
+    $Q=$Q+(1);
+}
+if(isset($_POST["R"]))
+{
+    $R=$R+(1);
+}
+if(isset($_POST["S"]))
+{
+    $S=$S+(1);
+}
+if(isset($_POST["T"]))
+{
+    $T=$T+(1);
+}
+
+$insert="INSERT INTO Voting (A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T) 
+Value('$A','$B','$C','$D','$E','$F','$G','$H','$I','$J','$K','$L','$M','$N','$O','$P','$Q','$R','$S','$T')";
+ $h=mysqli_query($connection,$insert);
+    if($h==true){
+        header("location:page1.html");
+    }else{
+        echo "data is not inserted".mysqli_error($connection);
+    }
+?>

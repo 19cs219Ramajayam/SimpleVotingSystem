@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  <title>voting</title>
+    <style>
+         *{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif,'Courier New', Courier, monospace;
+} 
+        body{
+            background-color:rgb(7, 82, 245);
+        }
+        h1{
+            text-align: center;
+            text-transform:capitalize;
+            margin-top:10px;
+            color: chartreuse;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+        }
+        table,th,td{
+            border: 3px solid white;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+            padding: 10px;
+            text-transform:capitalize;
+        }
+        th{
+            background-color: white;
+            font-size:2.4em;
+        }
+        td{
+            font-size:1.5em;
+        }
+        h2{
+            background-color:rgb(2, 187, 194);
+            color: black;
+            border-radius:10%;
+            padding: 5px;
+            width: 70px;
+            height: 1.5em;
+        font-size: 171%;
+        border-radius: 50%;
+        margin-left: 9px;
+        }
+        input{
+    width:fit-content;
+    background-color: lightblue;
+    border: none;
+    outline: none;
+    color: black;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    border-radius: 5px; 
+    font-size: 1.2em;
+    text-transform:capitalize;  
+    cursor: pointer;
+   }
+   input:hover{
+       color:darkcyan;
+
+   }
+   input:active{
+       background-color: royalblue;
+       color:white;
+   }
+     button{
+    width:100%;
+    background-color: lightblue;
+    border: none;
+    outline: none;
+    color: black;
+   padding:6px;
+    border-radius: 5px; 
+    font-size: 1.2em;
+    text-transform:capitalize;  
+    cursor: pointer;
+   }
+   button:hover{
+       color:darkcyan;
+
+   }
+   button:active{
+       background-color: royalblue;
+       color:white;
+   }
+   .c{
+       display: flex;
+       justify-content:center;
+   }
+   #v{
+       margin-top: 30px;
+       width:15%;
+   }
+   a{
+       text-decoration: none;
+       color:black;
+   }
+   a:hover{
+    color:darkcyan;
+   }
+   a:active{
+       color:white;
+   }
+   #error{
+       font-size:3em;
+       color: yellowgreen;
+       text-decoration:underline;
+   }
+    </style>
+      <script>
+        var audio = new Audio("tune.mp3");
+    function g(){
+    audio.play();
+    }
+    </script>
+</head>
+<body>
+    <br>
+    <h1>digital Expo</h1>
+    <h1>performance evaluation</h1>
+    <br>
+    <form action="Voting.php" method="post">
+        <table>
+            <tr>
+                <th>S.no</th>
+                <th>Project</th>
+                <th>Team</th>
+                <th>Voting Process</th>
+            </tr>
+            <tr>
+                <td>1:</td>
+                <td>knife shooting games</td>
+                <td><h2>A</h2></td>
+                <td><input type="submit" onclick="g();" name="A" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>2:</td>
+                <td>password cracking and pin cracking</td>
+                <td><h2>B</h2></td>
+                <td><input type="submit" onclick="g();" name="B" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>3:</td>
+                <td>pattern program (loop and condidtion)</td>
+                <td><h2>C</h2></td>
+                <td><input type="submit" onclick="g();" name="C" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>4:</td>
+                <td>looping task function and digital clock</td>
+                <td><h2>D</h2></td>
+                <td><input type="submit" onclick="g();" name="D" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>5:</td>
+                <td>tic tac toe game (x-o game)</td>
+                <td><h2>E</h2></td>
+                <td><input type="submit" onclick="g();" name="E" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>6:</td>
+                <td>game using pytdon</td>
+                <td><h2>F</h2></td>
+                <td><input type="submit" onclick="g();" name="F" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>7:</td>
+                <td>1.virtual painting using pytdon and open cv<br><br>
+                    2.stress buster games</td>
+                <td><h2>G</h2></td>
+                <td><input type="submit" onclick="g();" name="G" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>8:</td>
+                <td>1.GPS tracker <br><br> 2.aduino robotic printer</td>
+                <td><h2>H</h2></td>
+                <td><input type="submit" onclick="g();" name="H" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>9:</td>
+                <td>animation using HTML</td>
+                <td><h2>I</h2></td>
+                <td><input type="submit" onclick="g();" name="I" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>10:</td>
+                <td>electronic project</td>
+                <td><h2>J</h2></td>
+                <td><input type="submit" onclick="g();" name="J" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>11:</td>
+                <td>college community</td>
+                <td><h2>K</h2></td>
+                <td><input type="submit" onclick="g();" name="K" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>12:</td>
+                <td>etdical hacking</td>
+                <td><h2>L</h2></td>
+                <td><input type="submit" onclick="g();" name="L" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>13:</td>
+                <td>website scrapping</td>
+                <td><h2>M</h2></td>
+                <td><input type="submit" onclick="g();" name="M" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>14:</td>
+                <td>alumni student details</td>
+                <td><h2>N</h2></td>
+                <td><input type="submit" onclick="g();" name="N" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>15:</td>
+                <td>question bank website</td>
+                <td><h2>O</h2></td>
+                <td><input type="submit" onclick="g();" name="O" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>16:</td>
+                <td>college students management system</td>
+                <td><h2>P</h2></td>
+                <td><input type="submit" onclick="g();" name="P" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>17:</td>
+                <td>spiral on excel</td>
+                <td><h2>Q</h2></td>
+                <td><input type="submit" onclick="g();" name="Q" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>18:</td>
+                <td></td>
+                <td><h2>R</h2></td>
+                <td><input type="submit" onclick="g();" name="R" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>19:</td>
+                <td></td>
+                <td><h2>S</h2></td>
+                <td><input type="submit" onclick="g();" name="S" value="Vote"></td>
+            </tr>
+            <tr>
+                <td>20:</td>
+                <td></td>
+                <td><h2>T</h2></td>
+                <td><input type="submit" onclick="g();" name="A" value="Vote"></td>
+            </tr>
+        </table>
+    </form>
+    <div class="c">
+    <button id="v"><a href="adminLoginForm.php" target="_blank"><i class="fa fa-street-view" aria-hidden="true"></i> View</a></button>
+</div>
+<audio id="audio" src="tune.mpeg"></audio>
+<script>
+    var audio = new Audio("tune.mp3");
+function g(){
+audio.play();
+}
+</script>
